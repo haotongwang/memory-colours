@@ -1,0 +1,15 @@
+section {
+	background-color: #777;
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	padding: 20px;
+}
+
+div.colourcard {
+	background: red;
+	border: black;
+	margin: auto;
+	width: 150px;
+	height: 200px;
+}
