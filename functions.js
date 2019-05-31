@@ -1,3 +1,7 @@
+function shuffle (array) {
+
+}
+
 const rand = {
 	colours: function(n, colourList) {
         let clr = [];

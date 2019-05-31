@@ -9,4 +9,18 @@ let colours = rand.colours(divs.length, ['red','blue']);
 
 for (let i = 0; i < divs.length; i++) {
 	cards[i] = new Card(i, divs[i], colours[i]);
+
+	// show
+	setTimeout(function(){
+		cards[i].flip();
+	}, 1000);
+	// hide
+	setTimeout(function(){
+		cards[i].flip();
+	}, 2500);
+
+	// flip on click
+	divs[i].addEventListener("click", function(){
+		cards[i].flip();
+	})
 }
