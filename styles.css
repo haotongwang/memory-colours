@@ -13,3 +13,14 @@ div.colourcard {
 	width: 150px;
 	height: 200px;
 }
+
+.score {
+	border: black;
+	background-color: #999;
+	text-align: center;
+	width: 50px;
+	align: center;
+	margin: auto;
+	margin-bottom: 5px;
+	padding: 3px;
+}

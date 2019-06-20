@@ -4,6 +4,7 @@
 
 // debugger
 const divs = document.getElementsByClassName('colourcard');
+const score = document.getElementsByClassName('score');
 let cards = [];
 let colours = rand.colours(divs.length, ['red','blue','green']);
 
