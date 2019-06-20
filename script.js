@@ -5,7 +5,7 @@
 // debugger
 const divs = document.getElementsByClassName('colourcard');
 let cards = [];
-let colours = rand.colours(divs.length, ['red','blue']);
+let colours = rand.colours(divs.length, ['red','blue','green']);
 
 for (let i = 0; i < divs.length; i++) {
 	cards[i] = new Card(i, divs[i], colours[i]);
@@ -19,7 +19,7 @@ for (let i = 0; i < divs.length; i++) {
 		cards[i].flip();
 	}, 2500);
 
-	// flip on click
+	// click event
 	divs[i].addEventListener("click", function(){
 		cards[i].flip();
 	})

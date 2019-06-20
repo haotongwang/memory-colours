@@ -4,7 +4,7 @@ class Card {
 		this.ctx = colourcard;
 		this.flipColour = 'white';
 		this.colour = colour;
-		this.isFlip = 0;
+		this.isFlip = 0; // isFlip is 1 when colour side is showing
 	}
 
 	flip () {
