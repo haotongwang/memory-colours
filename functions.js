@@ -13,13 +13,6 @@ const rand = {
     }
 }
 
-function checkCard(obj, chain, cards) {
-	if (cards[chain[0]].colour != obj.colour) {
-		return 0
-	}
-	return 1
-}
-
 function mistake(chain, cards) {
 	// flash
 	flash(0)

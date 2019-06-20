@@ -28,7 +28,7 @@ for (let i = 0; i < divs.length; i++) {
 		// checks card
 		if /* first card in chain */ (chain == '') {
 			chain.push(i);
-		} else if /* correct card */ (checkCard(cards[i], chain, cards)) {
+		} else if /* correct card */ (cards[chain[0]].colour == obj.colour) {
 			chain.push(i);
 		} else /* wrong card */{
 			mistake(chain, cards);
