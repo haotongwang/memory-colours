@@ -14,7 +14,7 @@ div.colourcard {
 	height: 200px;
 }
 
-.score {
+#score {
 	border: black;
 	background-color: #999;
 	text-align: center;
