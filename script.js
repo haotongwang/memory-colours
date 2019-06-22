@@ -28,7 +28,9 @@ for (let i = 0; i < divs.length; i++) {
 		// checks card
 		if /* first card in chain */ (chain == '') {
 			chain.push(i);
-		} else if /* correct card */ (cards[chain[0]].colour == obj.colour) {
+		} else if /* card already in chain */ (chain.includes(i)) {
+			chain = removeArr(chain, i);
+		} else if /* correct card */ (cards[chain[0]].colour == cards[i].colour) {
 			chain.push(i);
 		} else /* wrong card */{
 			mistake(chain, cards);
@@ -38,6 +40,7 @@ for (let i = 0; i < divs.length; i++) {
 		// adds score if card chain completed
 		if (chain.length == coloursFreq[cards[i].colour]) {
 			score.innerHTML = Number(score.innerHTML) + chain.length;
+			chain.forEach(c => cards[c].complete())
 			chain = [];
 		}
 	})

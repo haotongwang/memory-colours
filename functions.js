@@ -25,3 +25,7 @@ function mistake(chain, cards) {
 		setTimeout(() => chain.forEach(c => cards[c].flip()), time + 100)
 	}
 }
+
+function removeArr (arr, value) {
+	return arr.filter(i => i != value)
+}
